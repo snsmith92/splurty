@@ -1,15 +1,17 @@
-<h2>
-  <span>SPLURTY / No. <%= @quote.id %></span>
-  The <u>best cooking quotes</u> on the internet!
-</h2>
+<div class = "hero">
+<br />
+<br />
+  <div class= 'quote-page col-8 offset-2'>
+    <h2>
+      <span class = "tagline">SPLURTY / No. <%= @quote.id %></span>
+    </h2>
+    <h1 class = "quote"><%= @quote.saying %></h1>
+    <h2 class="float-right author">- <%= @quote.author %></h2>
+    <br class="clear" />
+  </div>
+  <br />
+  <div class= 'text-center'>
+    <%= link_to 'Next Quote', root_path, class: 'btn btn-primary'%>
+  </div>
 
-<br />
-<br />
-
-<h1><%= @quote.saying %></h1>
-<br />
-<h2 class="float-right">- <%= @quote.author %></h2>
-
-<br class="clear" />
-<br />
-<br />
+</div>
